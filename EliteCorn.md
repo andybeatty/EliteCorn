@@ -4,11 +4,13 @@ A new research project has started that examines the relative heights of corn pl
 
 The corn has been planted in a grid and a drone was flown over to measure the height of each plant. The height of each corn plant has been recorded as an integer from 0-9 with 0 being the shortest plant and 9 representing the tallest plant.
 [Small Example]
+```
 41484
 36623
 76443
 44650
 46401
+```
 
 Ultimately we want to find the most **Elite** plant which will be defined later. To begin with we need to look at how many plants are visible from outside the field.
 
@@ -47,11 +49,13 @@ Given each plant in the field, first cacluate how far it can **see** in each dir
 
 Using the same example as before, let's look at the middle 6 in the 2nd row.
 
+```
 41484
 36623
 76443
 44650
 46401
+```
 
 - Looking Right from the plant, it can see 2 other plants and then hits the field boundary
 - Looking Left from the plant, it can only see 1 other plants because it immediately encounters a plant of equal height
@@ -64,11 +68,13 @@ Finally we take the **seeing distance** for each of the 4 directions and multipl
 
 Not bad but there should be a better plant in the field. Let's now look at the plant with height 6 in the 4th row:
 
+```
 41484
 36623
 76443
 44650
 46401
+```
 
 - Looking Right, it can see 2 plants and then the field boundary
 - Looking Left, it can see 2 plants before the edge
