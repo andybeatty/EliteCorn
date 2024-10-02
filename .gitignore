@@ -1,0 +1,10 @@
+# Ignore build directory
+build/
+
+# Ignore VS Code settings
+.vscode/
+
+
+# Ignore other temporary files
+*.tmp
+*.log
